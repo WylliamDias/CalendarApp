@@ -167,7 +167,7 @@ export const Modal: React.FC<IModalProps> = ({ closeModal, showMessage }) => {
           X
         </CloseModalButton>
         <header>
-          <h4>Create your new event</h4>
+          <h4>{selectedEvent ? 'Edit your event' : 'Create your new event'}</h4>
         </header>
         <main>
           <label htmlFor="nameFormInput">Name</label>
